@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="58dp"
+    tools:context=".ui.dashboard.archievment.ArchievmentFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_card_red"
+                    android:contentDescription="@string/bakcground_progress" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="@string/penghargaan"
+                    android:textColor="@color/white"
+                    android:textSize="32sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/test1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/cardViewInfo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="16dp"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp">
+
+                <ImageView
+                    android:id="@+id/menulis_kata_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toStartOf="@id/membaca_kata_ac"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/membaca_kata_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/menulis_kata_ac"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_menulis_kata_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menulis Kata"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/menulis_kata_ac"
+                    app:layout_constraintStart_toStartOf="@id/menulis_kata_ac"
+                    app:layout_constraintTop_toBottomOf="@id/menulis_kata_ac" />
+
+                <TextView
+                    android:id="@+id/tv_membaca_kata_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membaca Kata"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/membaca_kata_ac"
+                    app:layout_constraintStart_toStartOf="@id/membaca_kata_ac"
+                    app:layout_constraintTop_toBottomOf="@id/membaca_kata_ac" />
+
+                <ImageView
+                    android:id="@+id/menulis_huruf_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="@+id/menulis_kata_ac"
+                    app:layout_constraintStart_toStartOf="@+id/menulis_kata_ac"
+                    app:layout_constraintTop_toBottomOf="@id/tv_menulis_kata_ac" />
+
+                <ImageView
+                    android:id="@+id/membaca_huruf_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="@+id/membaca_kata_ac"
+                    app:layout_constraintStart_toStartOf="@+id/membaca_kata_ac"
+                    app:layout_constraintTop_toBottomOf="@id/tv_membaca_kata_ac" />
+
+                <TextView
+                    android:id="@+id/tv_menulis_huruf_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Menulis Huruf"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/menulis_kata_ac"
+                    app:layout_constraintStart_toStartOf="@id/menulis_kata_ac"
+                    app:layout_constraintTop_toBottomOf="@id/menulis_huruf_ac" />
+
+                <TextView
+                    android:id="@+id/tv_membaca_huruf_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Membaca Huruf"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/membaca_huruf_ac"
+                    app:layout_constraintStart_toStartOf="@id/membaca_huruf_ac"
+                    app:layout_constraintTop_toBottomOf="@id/membaca_huruf_ac" />
+
+                <ImageView
+                    android:id="@+id/puzzle_mudah_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="@+id/menulis_huruf_ac"
+                    app:layout_constraintStart_toStartOf="@+id/menulis_huruf_ac"
+                    app:layout_constraintTop_toBottomOf="@id/tv_menulis_huruf_ac" />
+
+                <ImageView
+                    android:id="@+id/puzzle_sedang_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="@+id/membaca_huruf_ac"
+                    app:layout_constraintStart_toStartOf="@+id/membaca_huruf_ac"
+                    app:layout_constraintTop_toBottomOf="@id/tv_menulis_huruf_ac" />
+
+                <TextView
+                    android:id="@+id/tv_puzzle_mudah_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puzzle Mudah"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/puzzle_mudah_ac"
+                    app:layout_constraintStart_toStartOf="@id/puzzle_mudah_ac"
+                    app:layout_constraintTop_toBottomOf="@id/puzzle_mudah_ac" />
+
+                <TextView
+                    android:id="@+id/tv_puzzle_sedang_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puzzle Sedang"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/puzzle_sedang_ac"
+                    app:layout_constraintStart_toStartOf="@id/puzzle_sedang_ac"
+                    app:layout_constraintTop_toBottomOf="@id/puzzle_sedang_ac" />
+
+                <ImageView
+                    android:id="@+id/puzzle_sulit_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="@+id/puzzle_mudah_ac"
+                    app:layout_constraintStart_toStartOf="@id/puzzle_mudah_ac"
+                    app:layout_constraintTop_toBottomOf="@id/tv_puzzle_mudah_ac" />
+
+                <ImageView
+                    android:id="@+id/puzzle_akhir_ac"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/pg3"
+                    app:layout_constraintEnd_toEndOf="@id/puzzle_sedang_ac"
+                    app:layout_constraintStart_toStartOf="@+id/puzzle_sedang_ac"
+                    app:layout_constraintTop_toBottomOf="@id/tv_puzzle_sedang_ac" />
+
+                <TextView
+                    android:id="@+id/tv_puzzle_sulit_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puzzle Sulit"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/puzzle_sulit_ac"
+                    app:layout_constraintStart_toStartOf="@id/puzzle_sulit_ac"
+                    app:layout_constraintTop_toBottomOf="@id/puzzle_sulit_ac" />
+
+                <TextView
+                    android:id="@+id/tv_puzzle_akhir_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Puzzle Akhir"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@id/puzzle_akhir_ac"
+                    app:layout_constraintStart_toStartOf="@id/puzzle_akhir_ac"
+                    app:layout_constraintTop_toBottomOf="@id/puzzle_akhir_ac" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

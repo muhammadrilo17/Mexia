@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/bantuan" android:title="@string/bantuan"
+            android:icon="@drawable/ic_bantuan"/>
+        <item
+            android:id="@+id/kontak" android:title="@string/kontak"
+            android:icon="@drawable/ic_call"/>
+        <item
+            android:id="@+id/setting" android:title="@string/setting"
+            android:icon="@drawable/ic_setting"/>
+    </group>
+</menu>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gemastik.android.mexia">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/slide1"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.login.forgetkey.ForgetPasswordActivity"></activity>
+        <activity android:name=".ui.drawer.settings.SettingActivity" />
+        <activity android:name=".ui.drawer.kontak.KontakActivity" />
+        <activity android:name=".ui.drawer.bantuan.BantuanActivity" />
+        <activity android:name=".ui.dashboard.profile.ubah.UbahProfileActivity" />
+        <activity
+            android:name=".ui.dashboard.home.puzzle.sulit.PuzzleSulitActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.puzzle.sedang.PuzzleSedangActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.puzzle.mudah.PuzzleMudahActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.puzzle.akhir.PuzzleAkhirActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.register.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.pengenalankata.membacakata.MembacaKataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.pengenalankata.menuliskata.MenulisKataActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.pengenalanhuruf.membacahuruf.MembacaHuruf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.pengenalanhuruf.menulishuruf.MenulisHuruf"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.test.TestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.puzzle.PuzzleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.pengenalankata.MembacaActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.dashboard.home.pengenalanhuruf.PengenalanHurufActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OnBoarding"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

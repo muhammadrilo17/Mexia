@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.register.RegisterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="56dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.38">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="32dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Daftar"
+                android:textColor="#5B86E5"
+                android:textSize="30sp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/email_input"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:maxLines="1"
+                android:paddingEnd="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_input_login"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/password_reinput"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingEnd="10dp"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_input_login"
+                android:inputType="textPassword"
+                android:paddingStart="10dp" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:text="Password" />
+
+            <EditText
+                android:id="@+id/password_input"
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingEnd="10dp"
+                android:maxLines="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_input_login"
+                android:inputType="textPassword"
+                android:paddingStart="10dp" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:background="@drawable/button_rounded"
+        android:paddingHorizontal="100dp"
+        android:text="Daftar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewLogin"
+        app:layout_constraintVertical_bias="0.17000002" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/button_rounded"
+        android:paddingHorizontal="50dp"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
